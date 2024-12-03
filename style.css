@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background: linear-gradient(135deg, #153677, #4e085f); */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.containerss{
+    width: 90vw;
+    /* background-color: lightblue; */
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px black;
+    margin: 20px auto;
+}
+.top-sec{
+    width: 100%;
+    background-color: grey;
+    border-radius: 20px 20px 0 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.heading p {
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
+.add-btn{
+    background-color: rgb(3, 166, 247);
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+.btn-primary {
+    background-color: rgb(3, 166, 247);
+    color: white;
+    border: none;
+}
+.btn-primary:hover{
+    background-color:  rgb(3, 166, 247);
+    border: none;  
+}
+.btn-primary:active {
+    background-color: rgb(3, 166, 247); 
+    color: white;
+    border: none;
+}
+.btn-primary:visited {
+    background-color:  rgb(3, 166, 247);
+    color: white;
+    border: none;
+}
+.btn-primary:focus {
+    background-color:  rgb(3, 166, 247);
+    color: white;
+    border: none;
+    outline: none;
+}
+.content-container{
+    padding: 20px;
+}
+.cate ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 0;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: 400;
+}
+.cate ul li{
+    width: 80px;
+    text-align: center;
+    list-style: none;
+    border-bottom: 2px solid whitesmoke;
+    padding: 10px 0;
+    cursor: pointer;
+}
+.cate ul li:hover{
+    border-bottom: 2px solid rgb(3, 166, 247);
+}
+.cate ul li:active{
+    border-bottom: 2px solid rgb(3, 166, 247);
+}
+.cards-container{
+    padding: 20px 0;
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cards{
+    padding: 10px 20px;
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 2px 2px grey;
+    background-color: rgb(227, 241, 194);
+}
+.c-top{
+    display: flex;
+    justify-content: space-between;
+}
+.c-top span{
+    padding: 5px 8px;
+    background-color: aquamarine;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.c-icons{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.c-icons i {
+    font-size: 12px;
+    cursor: pointer;
+}
+.c-mid{
+    margin: 10px 0;
+}
+.c-mid h3{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+.c-mid p{
+    font-size: 12px;
+}
+.c-bottom .date{
+    font-size: 12px;
+    font-weight: 600;
+    text-align: right;
+}
+.modal-body {
+   width: 100%;
+   box-sizing: border-box;
+   padding: 20px 30px;
+   text-transform: uppercase;
+   /* background-color: paleturquoise; */
+   background-color: lightgreen;
+}
+.modal-body p {
+    font-size: 18px;
+    font-weight: 600;
+}
+.modal-body h3{
+    font-size: 20px;
+    font-family: bold;
+}
+.title{
+    width: 100%;
+}
+.title input{
+    width: 100%;
+    padding: 5px;
+}
+.date input{
+    width: 100%;
+}
+.textarea{
+    width: 100%;
+}
+.textarea textarea {
+    width: 100% !important;
+    resize: vertical;
+}
+#dell{
+    color: red;
+}
+
+@media screen and (max-width: 400px){
+    .cards-container {
+        height: 70vh;
+        overflow-y: scroll;
+    }
+
+    .cards-container::-webkit-scrollbar{
+        display: none;
+    }
+}

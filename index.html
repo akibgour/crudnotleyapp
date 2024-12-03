@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do App</title>
+</head>
+<body>
+    <div class="containerss">
+        <div class="top-sec"> 
+            <div class="heading">
+                <p>Your Notes</p>
+            </div>
+                <span id="modalopen">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="form">
+                    <div class="add-btn">
+                        + Add
+                    </div>
+                  </button>
+                </span>
+        </div>
+        <!-- Button trigger modal -->
+        <!-- Modal -->
+        <form class="modal fade" id="form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h3>subject</h3>
+                <input type="text" name="" id="sub">
+                <p>Task name</p>
+                <div class="title">
+                    <input type="text" name="" id="task">
+                </div>
+                <p style="font-size: 12px;color: red" id="warn"></p>
+                 <br>
+                <p>date</p>
+                <div class="date">
+                    <input type="date" name="" id="tdate">
+                </div> <br>
+                <p>textarea</p>
+                <div class="textarea">
+                    <textarea name="" id="description" cols="50" rows="5" charswidth="23"></textarea>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary" id="submit">Save</button>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="content-container">
+            <div class="cate">
+                <ul>
+                    <li>All</li>
+                    <li>Personal</li>
+                    <li>Home</li>
+                    <li>Business</li>
+                </ul>
+            </div>
+            <div class="cards-container" id="cardsContainer">
+               
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./script.js"></script>
+    <!-- Bootstrap's JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
